@@ -111,7 +111,7 @@ modules:
       - "dnf swap -y --repo=copr:copr.fedorainfracloud.org:solopasha:hyprland astal astal-io"
       - "dnf -y install hyprpanel"
       - "dnf -y install gamescope"
-      - "sh <(curl -L https://nixos.org/nix/install) --no-daemon"
+      - "sh <(curl -L https://nixos.org/nix/install) --no-daemon -y"
     scripts:
       - image-info.sh
       
