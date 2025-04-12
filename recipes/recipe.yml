@@ -111,7 +111,7 @@ modules:
       - "dnf swap -y --repo=copr:copr.fedorainfracloud.org:solopasha:hyprland astal astal-io"
       - "dnf -y install hyprpanel"
       - "dnf -y install gamescope"
-      - "curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm"
+      - "curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm --no-start-daemon"
       - ". /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
       - "nix-channel --add https://nixos.org/channels/nixpkgs-unstable"
     scripts:
